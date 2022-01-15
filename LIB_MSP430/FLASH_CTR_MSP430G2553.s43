@@ -160,7 +160,7 @@ ERASE_INFO_FLASH
                     MOV.W       #FWKEY+FSSEL0+FN1,&FCTL2  
                     MOV.W       #FWKEY+ERASE,&FCTL1         
                     MOV.W       #FWKEY,&FCTL3           
-                    MOV.B       #0AAH,0(R4)
+                    MOV.B       #000H,0(R4)
                     MOV.W       #FWKEY,&FCTL1 
                     MOV.W       #FWKEY,&FCTL3
                     RET 
