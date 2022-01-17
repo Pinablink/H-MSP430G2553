@@ -100,11 +100,13 @@ LOOP_GRAVAR_FLASH:  MOV.B         @R4+,R8
                     CALL          #INPUT_INFO_FLASH
                     INC.W         R6
                     DEC.W         R5
-                    JZ            END_GRAVAR_FLASH
+                    JZ            END_GRAVAR_SUCESS
                     JMP           LOOP_GRAVAR_FLASH 
 RANGE_OVERFLOW:     MOV.W         #0FFFFH,R7
                     JMP           END_GRAVAR_FLASH
-RANGE_OUT:          MOV.W         #0EEEEH,R7                    
+RANGE_OUT:          MOV.W         #0EEEEH,R7  
+                    JMP           END_GRAVAR_FLASH
+END_GRAVAR_SUCESS:  MOV.W         #000FFH,R7         
 END_GRAVAR_FLASH:   POP.W         R8
                     MOV.W         #00000H,R6
                     RET 
@@ -148,10 +150,11 @@ GO_INPUT_FLASH:     SUB.W        R4,R5
 LOOP_APAGAR_FLASH:  CALL         #ERASE_INFO_FLASH
                     INC.W        R4
                     DEC.W        R5
-                    JZ           END_APAGAR_FLASH
+                    JZ           END_L_APAGAR
                     JMP          LOOP_APAGAR_FLASH   
-END_APAGAR_FLASH:   MOV.W        #00000H,R4
-                    MOV.W        #000FFH,R6
+END_L_APAGAR:       MOV.W        #000FFH,R6
+END_APAGAR_FLASH:   POP.W        R7
+                    MOV.W        #00000H,R4
                     RET 
 ;---------------------------------------------------------------------------------------------- 
 ;----------------------------------------------------------------------------------------------
