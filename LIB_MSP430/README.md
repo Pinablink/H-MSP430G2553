@@ -7,6 +7,14 @@ Aqui nesse espaço vou disponibilizar pedaços de códigos em ASM para que possa
 
 ## Como utilizar as libs
 
+### CONFIG_CLOCK_MSP430G2553
+
+Esse módulo, disponibiliza rotinas para configuração e manutenção orientado ao tempo de processamento.
+
+### CONFIG_UART_MSP430G2553
+
+Esse módulo, disponibiliza rotinas para configuração de comunicação UART do seu software.
+
 ### FLASH_CTR_MSP430G2553
 
 Esse módulo, disponibiliza rotinas para você maninpular a memória Flash do seu Hardware. A forma como deve ser utilizado está descrito no cabeçalho do arquivo.
@@ -102,12 +110,3 @@ Em modo Debug, mesmo como simulador você pode observar o funcionamento. Veja na
 ⚠ Importante ⚠
 
 Em modo simulador, assim que você concluir o Debug, a informação será perdida. Para atestar o funcionamento, é necessário executar no hardware em modo debugger.
-
-
-### CONFIG_CLOCK_MSP430G2553
-
-Esse módulo, disponibiliza rotinas para configuração e manutenção orientado ao tempo de processamento.
-
-### CONFIG_UART_MSP430G2553
-
-Esse módulo, disponibiliza rotinas para configuração de comunicação UART do seu software.
