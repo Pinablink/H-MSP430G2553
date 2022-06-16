@@ -110,3 +110,7 @@ Em modo Debug, mesmo como simulador você pode observar o funcionamento. Veja na
 ⚠ Importante ⚠
 
 Em modo simulador, assim que você concluir o Debug, a informação será perdida. Para atestar o funcionamento, é necessário executar no hardware em modo debugger.
+
+### UTIL_MSP430G2553
+
+Esse módulo, disponibiliza rotinas para configuração e manutenção de periféricos da sua aplicação. 🛠 Exemplo em construção 🛠
