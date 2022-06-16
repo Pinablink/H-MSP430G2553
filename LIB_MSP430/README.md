@@ -9,11 +9,11 @@ Aqui nesse espaço vou disponibilizar pedaços de códigos em ASM para que possa
 
 ### CONFIG_CLOCK_MSP430G2553
 
-Esse módulo, disponibiliza rotinas para configuração e manutenção orientado ao tempo de processamento.
+Esse módulo, disponibiliza rotinas para configuração e manutenção orientado ao tempo de processamento. 🛠 Exemplo em construção 🛠
 
 ### CONFIG_UART_MSP430G2553
 
-Esse módulo, disponibiliza rotinas para configuração de comunicação UART do seu software.
+Esse módulo, disponibiliza rotinas para configuração de comunicação UART do seu software. 🛠 Exemplo em construção 🛠
 
 ### FLASH_CTR_MSP430G2553
 
