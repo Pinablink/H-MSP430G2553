@@ -111,6 +111,10 @@ Em modo Debug, mesmo como simulador você pode observar o funcionamento. Veja na
 
 Em modo simulador, assim que você concluir o Debug, a informação será perdida. Para atestar o funcionamento, é necessário executar no hardware em modo debugger.
 
+### SN74HC595N_MSP430G2553
+
+Esse módulo, disponibiliza rotinas para utilização do Shift Register SN74HC595N. 🛠 Exemplo em construção 🛠
+
 ### UTIL_MSP430G2553
 
 Esse módulo, disponibiliza rotinas para configuração e manutenção de periféricos da sua aplicação. 🛠 Exemplo em construção 🛠
